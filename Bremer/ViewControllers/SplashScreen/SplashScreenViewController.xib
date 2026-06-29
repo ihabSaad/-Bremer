@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashScreenViewController" customModule="Bremer" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="B6m-Pm-FTl" id="kVL-O0-ggr"/>
+                <outlet property="nameRestaurantLabel" destination="ydD-if-slr" id="Eex-qR-HaS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="VTo-M6-s1K">
+                    <rect key="frame" x="89" y="328" width="215" height="246"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="B6m-Pm-FTl">
+                            <rect key="frame" x="32.666666666666671" y="0.0" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="B6m-Pm-FTl" secondAttribute="height" multiplier="1:1" id="VAS-LR-Zp7"/>
+                                <constraint firstAttribute="height" constant="150" id="vYg-rF-PR7"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydD-if-slr">
+                            <rect key="frame" x="0.0" y="159" width="215" height="87"/>
+                            <string key="text">Bremer®
+RESTAURANTS</string>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="31"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VTo-M6-s1K" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="EIJ-8e-7iA"/>
+                <constraint firstItem="VTo-M6-s1K" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Z3n-iB-cyd"/>
+            </constraints>
+            <point key="canvasLocation" x="49.618320610687022" y="72.535211267605632"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo" width="2048" height="2048"/>
+    </resources>
+</document>

@@ -1,0 +1,24 @@
+PODS:
+  - Kingfisher (8.6.2)
+  - RxSwift (6.9.0)
+  - TextFieldEffects (1.6.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - RxSwift
+  - TextFieldEffects
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - RxSwift
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Kingfisher: 23d18f54677d973b713e54ce6a8f5eef6e7056ba
+  RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+
+PODFILE CHECKSUM: ce2eca46f26080d49cb0ebe05882f2ca4cb911f8
+
+COCOAPODS: 1.16.2

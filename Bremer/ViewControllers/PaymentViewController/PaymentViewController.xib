@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentViewController" customModule="Bremer" customModuleProvider="target">
+            <connections>
+                <outlet property="cardNameOnCardLabel" destination="olT-ek-xfp" id="dow-6E-ZSs"/>
+                <outlet property="cardNameTextField" destination="NEg-Lf-yj4" id="048-ZX-eu8"/>
+                <outlet property="cardNumberOnCardLabel" destination="s9g-X0-Yzd" id="e2u-Z3-X0E"/>
+                <outlet property="cardNumberTextField" destination="EQF-Qf-9Q4" id="xey-Fi-243"/>
+                <outlet property="depositTextField" destination="XKp-aG-P1R" id="Fhs-2I-exb"/>
+                <outlet property="payButton" destination="K9t-kM-Ni3" id="cFa-ZB-2gD"/>
+                <outlet property="totalAmountLabel" destination="IGL-Ia-flr" id="kAF-gG-WzH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpP-pO-cxB" customClass="CardView" customModule="Bremer" customModuleProvider="target">
+                    <rect key="frame" x="17" y="160.33333333333334" width="359" height="186.00000000000003"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="UDs-0x-qh8">
+                            <rect key="frame" x="308" y="10" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="UDs-0x-qh8" secondAttribute="height" id="0y2-DJ-ZzP"/>
+                                <constraint firstAttribute="height" constant="35" id="aVe-7d-v12"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Version=Logo" translatesAutoresizingMaskIntoConstraints="NO" id="IK9-F9-msP">
+                            <rect key="frame" x="16" y="10" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Gb4-2A-ZPw"/>
+                                <constraint firstAttribute="width" secondItem="IK9-F9-msP" secondAttribute="height" id="Zsz-RI-UwO"/>
+                                <constraint firstAttribute="width" secondItem="IK9-F9-msP" secondAttribute="height" id="ic0-14-jes"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FMu-Ji-Hwu">
+                            <rect key="frame" x="16" y="61" width="327" height="104"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="YNU-5g-Qsa">
+                                    <rect key="frame" x="0.0" y="0.0" width="100.66666666666667" height="48.666666666666664"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9vg-fY-iKT">
+                                            <rect key="frame" x="0.0" y="0.0" width="100.66666666666667" height="48.666666666666664"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Account Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1h-mb-198">
+                                                    <rect key="frame" x="0.0" y="0.0" width="84.333333333333329" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                                    <color key="textColor" red="0.17254901959999999" green="0.1176470588" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**** **** ****" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9g-X0-Yzd">
+                                                    <rect key="frame" x="0.0" y="28.333333333333314" width="100.66666666666667" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Cxk-dD-pEO">
+                                    <rect key="frame" x="0.0" y="68.666666666666657" width="92.333333333333329" height="35.333333333333343"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Holder Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ad-eb-WO1">
+                                            <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="15.666666666666666"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                            <color key="textColor" red="0.17254901959999999" green="0.1176470588" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olT-ek-xfp">
+                                            <rect key="frame" x="0.0" y="19.666666666666686" width="81.333333333333329" height="15.666666666666664"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                            <color key="textColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.77254901960784317" green="0.62745098039215685" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="IK9-F9-msP" firstAttribute="top" secondItem="VpP-pO-cxB" secondAttribute="top" constant="10" id="D8q-DD-EEn"/>
+                        <constraint firstAttribute="trailing" secondItem="UDs-0x-qh8" secondAttribute="trailing" constant="16" id="I0a-J8-olI"/>
+                        <constraint firstItem="FMu-Ji-Hwu" firstAttribute="top" secondItem="UDs-0x-qh8" secondAttribute="bottom" constant="16" id="Sv3-kc-807"/>
+                        <constraint firstItem="FMu-Ji-Hwu" firstAttribute="leading" secondItem="VpP-pO-cxB" secondAttribute="leading" constant="16" id="dCE-3a-dYC"/>
+                        <constraint firstAttribute="height" constant="186" id="dcY-8l-1eJ"/>
+                        <constraint firstItem="UDs-0x-qh8" firstAttribute="top" secondItem="VpP-pO-cxB" secondAttribute="top" constant="10" id="mJQ-bY-xoD"/>
+                        <constraint firstItem="IK9-F9-msP" firstAttribute="leading" secondItem="VpP-pO-cxB" secondAttribute="leading" constant="16" id="nky-mq-wGD"/>
+                        <constraint firstItem="FMu-Ji-Hwu" firstAttribute="centerX" secondItem="VpP-pO-cxB" secondAttribute="centerX" id="rc4-J5-1Jk"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Secure Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1X-8y-TWp">
+                    <rect key="frame" x="130" y="130" width="133" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qjh-oO-Q2s">
+                    <rect key="frame" x="17" y="366.33333333333337" width="359" height="264.33333333333337"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZsT-4m-Bcn">
+                            <rect key="frame" x="0.0" y="0.0" width="359" height="78"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEW-TV-aIu">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="23"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQF-Qf-9Q4" customClass="SpacedHoshiTextField" customModule="Bremer" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="28" width="359" height="50"/>
+                                    <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Q7F-CT-oVi"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="cardNumberDidChange:" destination="-1" eventType="editingChanged" id="ywK-gj-emV"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5r3-qG-9qB">
+                            <rect key="frame" x="0.0" y="90" width="359" height="72"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Holder Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sm7-Lr-nGd">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NEg-Lf-yj4" customClass="SpacedHoshiTextField" customModule="Bremer" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="22" width="359" height="50"/>
+                                    <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="pGa-RA-k2l"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="cardNameDidChange:" destination="-1" eventType="editingChanged" id="ygj-7M-i8A"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hxC-Rv-4sm">
+                            <rect key="frame" x="0.0" y="174.00000000000006" width="359" height="90.333333333333314"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Deposit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G58-4H-DhD">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XKp-aG-P1R" customClass="SpacedHoshiTextField" customModule="Bremer" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="22" width="359" height="50"/>
+                                    <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="2eg-Ts-O38"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="amountFieldDidChange:" destination="-1" eventType="editingChanged" id="aMm-wg-W9J"/>
+                                    </connections>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Please enter the exact amount (100 EGP) to enable payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7a-bQ-Oa6">
+                                    <rect key="frame" x="0.0" y="77" width="359" height="13.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="5r3-qG-9qB" firstAttribute="top" secondItem="qjh-oO-Q2s" secondAttribute="top" constant="90" id="HlR-Pa-S9f"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3ir-lv-slH">
+                    <rect key="frame" x="17" y="650.66666666666663" width="359" height="161.33333333333337"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ytp-2T-eUy">
+                            <rect key="frame" x="0.0" y="0.0" width="359" height="78"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGL-Ia-flr">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="56"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: Reservation is valid for 1 hour only from the selected time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nK-fV-WMH">
+                                    <rect key="frame" x="0.0" y="66" width="359" height="12"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                    <color key="textColor" systemColor="systemRedColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9t-kM-Ni3">
+                            <rect key="frame" x="0.0" y="88" width="359" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="yVy-5L-vLB"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Confirm &amp; Pay 100 EGP">
+                                <color key="baseBackgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="payButton:" destination="-1" eventType="touchUpInside" id="pFm-4q-Mvt"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing, you agree to our terms of booking and cancellation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beg-mk-xge">
+                            <rect key="frame" x="0.0" y="148" width="359" height="13.333333333333343"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="13.333333333333343" id="VQ2-Wa-WtV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.058823529411764705" green="0.058823529411764705" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="X1X-8y-TWp" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="5Fs-Aj-EVz"/>
+                <constraint firstItem="qjh-oO-Q2s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="DIH-HR-Lyr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qjh-oO-Q2s" secondAttribute="trailing" constant="17" id="FyA-5v-uNs"/>
+                <constraint firstAttribute="trailing" secondItem="3ir-lv-slH" secondAttribute="trailing" constant="17" id="KPy-VL-WSf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VpP-pO-cxB" secondAttribute="trailing" constant="17" id="N08-rf-mwV"/>
+                <constraint firstItem="VpP-pO-cxB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="17" id="X4W-fK-T6S"/>
+                <constraint firstItem="3ir-lv-slH" firstAttribute="top" secondItem="qjh-oO-Q2s" secondAttribute="bottom" constant="20" id="gil-pJ-4a2"/>
+                <constraint firstItem="X1X-8y-TWp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="kpc-5v-CXl"/>
+                <constraint firstItem="3ir-lv-slH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="szq-7Q-jSX"/>
+                <constraint firstItem="VpP-pO-cxB" firstAttribute="top" secondItem="X1X-8y-TWp" secondAttribute="bottom" constant="10" id="tA6-Ze-nmG"/>
+                <constraint firstAttribute="bottom" secondItem="3ir-lv-slH" secondAttribute="bottom" constant="40" id="tWZ-cP-jhi"/>
+                <constraint firstItem="qjh-oO-Q2s" firstAttribute="top" secondItem="VpP-pO-cxB" secondAttribute="bottom" constant="20" id="usV-gf-3Xi"/>
+            </constraints>
+            <point key="canvasLocation" x="49.618320610687022" y="88.732394366197184"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group" width="52.666667938232422" height="40.666667938232422"/>
+        <image name="Version=Logo" width="76" height="58"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
